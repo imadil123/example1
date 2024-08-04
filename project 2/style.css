@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #ccc; */
+    background-color:white;
+}
+
+.container{
+    max-width: 900px;
+    margin:450px auto;
+    /* margin: 0 auto; */
+    /* margin-top: 450px; */
+        
+}
+
+
+.title_small{
+    font-size: 20px;
+}
+
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1); */
+    box-shadow: 10px 10px 20px rgba(20, 20, 20, 0.527);
+
+    border-radius: 10px;
+}
+
+
+.form_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input , select, textarea {
+    padding:6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+option{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.textarea_control textarea:focus{
+    outline-color: rgb(143, 185, 247);
+    outline-style: solid;
+    outline-width: 2px;
+    
+
+}
+
+
+input:focus{
+    outline-color: rgb(143, 185, 247);
+    outline-style: solid;
+    outline-width: 0.5px;
+    /* border: 1px solid rgba(143,185,247); */
+
+
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+button{
+    background-color: red;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: rgb(66, 247, 53);
+    border: 2px solid #ccc;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1 / span 2;
+
+}
+
+.textarea_control textarea{
+    width: 100%;
+}
+
+
+@media (max-width:460px){
+    .textarea_control {
+        grid-column: 1 / span 1;
+    
+    }
+    
+};
